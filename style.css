@@ -1,0 +1,64 @@
+body {
+  background-image: url("watch.jpeg"); /*Backgroung image for the body*/
+  background-repeat: repeat-x; /*Repeating image horizontally*/
+  background-repeat: repeat; /*Repeating the backgroung image*/
+}
+h2 {
+  text-align: center;
+  color: lightgreen;
+}
+h3 {
+  text-align: center;
+}
+
+#stopwatch-container {
+  position: absolute; /*Making position absolute*/
+  background-color: antiquewhite;
+  width: 30%; /*Setting the wigth of the parent*/
+  min-width: 500px; /*Setting the minimum width to 500px*/
+  transform: translate(-50%, -50%); /*Center the container*/
+  height: 250px; /* Set height to 200px */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  padding: 20px 0; /* Set padding top and bottom to 20px */
+  border-radius: 10px; /* Set border radius to 10px */
+  padding-bottom: 40px; /* Extra padding at the bottom */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.338); /* Add a shadow effect */
+  border: 2px solid green; /* Add a green border */
+}
+
+#buttons {
+  width: 90%;
+  margin: 60px 0 auto 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+#start-btn,                 /*Here giving CSS to the buttons */
+#stop-btn,
+#reset-btn {
+  height: 25px;
+  width: 60px;
+  border-radius: 10px;
+  font-size: 15px;
+  text-align: center;
+  color: black;
+  margin-top: 40px;
+  cursor: pointer;
+  outline: none;
+}
+
+#buttons button:nth-last-child(2) {
+  /*Set background color of second last button to red */
+  background-color: red;
+}
+
+#buttons button:nth-last-child(1) {
+  /*Set background color of  last button to red */
+  background-color: yellow;
+}
+
+#buttons button:nth-last-child(3) {
+  /*Set background color of third last button to red */
+  background-color: green;
+}
